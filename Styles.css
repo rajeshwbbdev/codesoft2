@@ -1,0 +1,522 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("online-communication.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-position: center;
+    background-attachment: scroll;
+    width: 100vh;
+    
+}
+.main{
+    height:100px;    
+}
+.Top{
+    display: flex;
+    justify-content: center;
+    
+}
+.logo{
+    display: inline;
+    margin: 20px;
+    font-family: 'Mukta', sans-serif;
+    cursor: pointer;
+    width: 200px;
+    height: 20px;
+}
+.logo span{
+    color: red;
+
+}
+
+
+.Top nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 25px;
+    position: relative;
+    left: 100px;
+    width: 500px;
+    margin-left: 100px;
+}
+.Top nav li{
+    font-size: 20px;
+    margin-top: 28px;
+    cursor: pointer;
+    color: rgb(18, 18, 219);
+}
+.Top nav li:hover{
+    text-decoration: underline yellow 3px;
+}
+.Top .search{
+    display: flex;
+    height: 30px;
+    margin: 30px;
+    position: absolute;
+    right: 200px;
+    border-radius: 7px;
+    border-color: rgb(15, 10, 10);
+}
+.Top .search input{
+    text-align: center;
+    background: transparent;
+    border-radius: 3px;
+    color: #555;
+}
+.Top .search img{
+    cursor: pointer;
+}
+.Top .login button{
+    height: 40px;
+    padding: 7px;
+    margin: 20px;
+    width: 100px;
+    color: white;
+    background-color: rgb(61, 32, 190);
+    opacity: 0.8;
+    font-size: 17px;
+    position: absolute;
+    display: block;
+    right: 50px;
+    border-radius: 5px;
+
+}
+.Top button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+#diff{
+    mix-blend-mode:color-burn;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    display: none;
+}
+.moral{
+    background-color: rgba(255,255,255, 0.4);
+    height: 430px;
+    width: 60%;
+    top: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px auto auto 20%;
+}
+.moral>h2{
+    font-family: 'Galdeano', sans-serif;
+    opacity: 1 !important;
+    font-size: 70px;
+    z-index: 1;
+    font-weight: bold;
+    color: rgb(47, 0, 255);
+    text-indent: 70px;
+}
+
+.moral p{
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 1;
+    z-index: 1;
+    font-size: 20px;
+    text-indent: 100px;
+}
+.moral button{
+    height: 40px;
+    width: 100px;
+    margin: 20px;
+    margin-top: 40px;
+    background-color: rgb(66, 249, 10);
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.moral button:hover{
+    opacity: 1;
+}
+.hire{
+    position: absolute;
+    height: 130px;
+    margin-top: 30px;
+    background-color: rgba(200, 205, 209,0.6);
+    top: 720px;
+    width: 70%;
+    max-width: 90%;
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.hire p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-indent: 45px;
+
+}
+.hire img{
+    height: 45px;
+    display: inline;
+    cursor: pointer;
+    margin: 8px;
+}
+.hire .more{
+    display: inline;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 14px;
+    position: absolute;
+}
+.Popular{
+    margin: 70px;
+    max-width: 90%;
+    width: 90%;
+    height: 475px;
+    position: absolute;
+    top: 900px;
+    background-color: rgba(92, 99, 104,0.4);
+    
+}
+.Popular h1{
+    margin: 15px;
+    text-indent: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+.Popular section{
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+.Popular section img{
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    width: 200px;
+}
+.Popular section p{
+    margin: 9px;
+    font-weight: bold;
+    font-size: 1.15 em;
+}
+.Popular section .Rupees{
+    text-decoration:underline rgba(167, 40, 40,0.7);
+    text-align: center;
+    font-size: 1.4em;
+}
+.slide{
+    display: flex;
+    justify-content: space-around;
+}
+.Popular button{
+    border-radius: 5px;
+    background-color: rgba(70, 56, 174,0.8);
+    height: 39px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px;
+    margin-top: 20px;
+}
+.Popular button:hover{
+    opacity: 0.6;
+}
+.Newcourses{
+    margin: 70px;
+    max-width: 90%;
+    width: 90%;
+    height: 475px;
+    position: absolute;
+    top: 1500px;
+    background-color: rgba(92, 99, 104,0.4);
+    
+}.Newcourses h1{
+    margin: 15px;
+    text-indent: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+.Newcourses section{
+    cursor: pointer;
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+    background-color: white;
+}
+.Newcourses section img{
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    width: 100%;
+}
+.Newcourses section p{
+    margin: 9px;
+    font-weight: bold;
+    font-size: 1.15 em;
+}
+.Newcourses section .Rupees{
+    text-decoration:underline rgba(167, 40, 40,0.7);
+    text-align: center;
+    font-size: 1.4em;
+}
+.Newcourses button{
+    border-radius: 5px;
+    background-color: rgba(70, 56, 174,0.8);
+    height: 39px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px;
+    margin-top: 20px;
+}
+.Newcourses button:hover{
+    opacity: 0.6;
+}
+.perks{
+    top: 2100px;
+    position: absolute;
+    margin: 100px;
+    display: flex;
+    gap: 40%;
+}
+.perks section h2{
+    font-weight:180;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.perks section ol li{
+    margin: 7px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 18px;
+}
+.perks #Download{
+    gap: 15px;
+}
+.perks #Download img{
+    cursor: pointer;
+}
+.line{
+    position: absolute;
+    top: 2470px;
+    border-bottom: 5px solid black;
+    color: black;
+    cursor: pointer;
+    width: 90%;
+    margin: 4%;
+    margin-bottom: 40px;
+}
+.line2{
+    display: none;
+}
+.follow{
+    position: absolute;
+    top: 2570px;
+    right: 120px;
+    gap: 20px;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    height: 80px;
+}
+@media (min-width: 600px) and (max-width: 1040px){
+    .Top .logo{
+        font-size: 22px;
+        margin-top: 10px;
+        position: absolute;
+        left: 15px;
+    }
+    .Top .logo span{
+        display: block;
+    }
+    .main .nav{
+        gap: 8px;
+        flex-direction: column;
+        float: left;
+        position: absolute;
+        left: -85px;
+        text-align: center;
+        top: 150px;
+        background-color: rgba(59, 57, 57,0.9);
+        width: 150px;
+        display: none;
+    }
+    .main nav li{
+        color: white;
+    }
+    .Top .search{
+        right: 400px;
+    }
+    .moral>h2 span{
+        display: block;
+        text-indent: 170px;
+    }
+    .moral #indent{
+        text-indent: 215px;
+    }
+    #diff{
+        display: block;
+        position: absolute;
+        top: 80px;
+    }
+    #diff:hover .main.nav{
+        display: block;
+    }
+    .moral p{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .perks{
+        gap: 15%;
+    }
+  }
+  @media (min-width: 350px) and (max-width: 600px){
+    .Top .login button{
+        position: absolute;
+        display: block;
+        right: -90vw;    
+    }
+    .Top .logo{
+        left: -10px;
+        position: absolute;
+    }
+    .Top .logo span{
+        display: block;
+    }
+    .search{
+        position: relative;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        left: 370px;
+    }
+    .search input{
+        height: 40px;
+    }
+    .search img{
+        height: 57px;
+    }
+    .main .nav{
+        gap: 8px;
+        flex-direction: column;
+        float: left;
+        position: absolute;
+        left: -85px;
+        text-align: center;
+        top: 150px;
+        background-color: rgba(59, 57, 57,0.9);
+        width: 150px;
+        display: none;
+    }
+    .main nav li{
+        color: white;
+    }
+    .moral{
+        width: 140%;
+        
+    }
+    .moral h2{
+        font-size: 2.8em;
+
+    }
+    .perks{
+        gap: 14%;
+    }
+    .moral>h2 span{
+        text-indent: 160px;
+        display: block;
+    }
+    .moral #indent{
+        display: block;
+        margin-top: -30px;
+        text-indent: 190px;
+    }
+    .hire{
+        width: 250%;
+        position: relative;
+        display: block;
+        top: 580px;
+        margin: 15%;
+        right: 10%;
+    }
+    .Popular{
+        height: 1300px;
+        display: block;
+        left: 35%;
+    }
+    .Popular section{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Popular .slide{
+        flex-direction: column;
+    }
+    .line{
+        width: 150%;
+        left: 15%;
+        position: absolute;
+    }
+    .Newcourses{
+        top: 2500px;
+        height: 1300px;
+        left: 35%;
+    }
+    .Newcourses .slide{
+        flex-direction: column;
+    }
+    .Newcourses section{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .perks{
+        top: 4000px;
+        gap: 5%;
+    }
+    .follow{
+        top: 4500px;
+        display: block;
+        left: 30%;
+    }
+    .line2{
+        display: block;
+        top: 4400px;
+    }
+    #diff{
+        display: block;
+        position: absolute;
+        top: 120px;
+    }
+    .main .nav{
+        z-index: 1;
+        top: 200px;
+    }
+    #diff:active .nav{
+        display: block;
+    }
+  }
+  @media (max-width: 300px){
+    
+    .Top .search{
+        margin-right: 500px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    .login{
+        margin-left: 50px;
+        padding-left: 50px;
+    }
+  }
